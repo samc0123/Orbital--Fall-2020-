@@ -3,7 +3,7 @@
 
 ## Project 2
 
-** Main Code**
+**Main Code**
 * Trajectory of an elliptical orbit was determined using Lambert's Theorem 
 * Comparisons were made with the given orbital properties to ensure correctness 
 * Time of Flight (TOF) as well as observation angles were determined 
