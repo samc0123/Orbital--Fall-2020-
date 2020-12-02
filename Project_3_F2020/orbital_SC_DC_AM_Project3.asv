@@ -91,8 +91,8 @@ ylabel('Epsilon', 'FontWeight','Bold');
 yyaxis right
 plot(itr,vLNew,'LineWidth',2);
 ylabel('Position Angle(vL) (°)', 'FontWeight','Bold');
-title('Epsilion/vL vs. Iteration', 'FontWeight','Bold');
-xlabel('Iteration #', 'FontWeight','Bold');
+title('Epsilion/vL vs. Iteration');
+xlabel('Iteration #');
 legend('Epsilon', 'vL (°)');
 
 %% Part D 
