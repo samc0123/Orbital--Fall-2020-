@@ -80,3 +80,18 @@ ci=['Converged Iteration Amount: ',num2str(length(posEps))];
 disp(ce);
 disp(cv);
 disp(ci); 
+
+%% Part C
+itr=linspace(1,length(posEps),3); % # of iterations
+figure 
+hold on 
+yyaxis left
+plot(itr,posEps,'LineWidth',2);
+ylabel('Epsilon');
+yyaxis right
+plot(itr,vLNew,'LineWidth',2);
+ylabel('vL (°)');
+title('Epsilion/vL vs. Iteration');
+xlabel('Iteration #');
+legend('Epsilon', 'vL (°)');
+
