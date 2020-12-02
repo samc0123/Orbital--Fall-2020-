@@ -22,7 +22,6 @@ E=Vinf^2/2; % Energy m^2/s^2
 a=-mu/(2*E); % Semimajor axis, m 
 vL=0; % initial position angle 
 rl=rE; % From Project3Help
-vB=deg2rad(theta); % Given angle, Project3Help
 
 % Initial Arrays 
 posEps=[]; % Epsilon values
@@ -44,7 +43,7 @@ while t==1
     
     % Coefficients of the Eqn. 
     term1=1;
-    term2=(rl/a)*cos(vLTemp);
+    term2=(rl/a)*cosd(vLTemp);
     term3=(rl/a)-1;
     
     % Use the 'roots' fn. & save to array  
@@ -54,7 +53,7 @@ while t==1
     posEps(i)=tempEps(loc); 
     
     %% vL solution
-    tempvL=a*cos(-1/posEps(i))-vB;
+    tempvL=acosd(-1/posEps(i))-theta;
     vLNew(i)=tempvL;
     
     %% vL Difference
@@ -73,4 +72,11 @@ while t==1
     i=i+1;
 end
 
+%% Part B
 
+ce=['Converged Epsilon is: ',num2str(posEps(length(posEps)-1))];
+cv=['Converged vL is: ',num2str(vLNew(length(vLNew)-1))];
+ci=['Converged Iteration Amount: ',num2str(length(posEps))];
+disp(ce);
+disp(cv);
+disp(ci); 
