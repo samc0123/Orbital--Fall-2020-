@@ -3,7 +3,7 @@
 % Daniella Chung(djc375)
 % Andrew Manfredi(ajm418) 
 
-% Orbital Mechanics: Project 2 
+% Orbital Mechanics: Project 3 
 % Professor Mookerjee
 % Fall 2020 
 
