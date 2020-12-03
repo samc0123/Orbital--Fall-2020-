@@ -83,12 +83,11 @@ disp(cv);
 disp(ci); 
 
 %% Part C
-itrE=linspace(0,length(posEps)-1,length(posEps)); % # of iterations
+itrE=linspace(1,length(posEps),length(posEps)); % # of iterations
 itrV=linspace(0,length(vLNew)-1,length(vLNew)); 
 figure 
 hold on 
-xlim([0 3]);
-xticks(0:1:3);
+xticks(1:1:lrnhy);
 plot(itrE,posEps,'LineWidth',2,'Color','r');
 ylabel('Epsilon', 'FontWeight','Bold');
 xlabel('Iteration #', 'FontWeight','Bold');
