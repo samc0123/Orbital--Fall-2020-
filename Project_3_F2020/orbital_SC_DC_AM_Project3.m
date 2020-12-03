@@ -85,6 +85,7 @@ disp(ci);
 itr=linspace(1,length(posEps),3); % # of iterations
 figure 
 hold on 
+xticks(1:1:length(posEps));
 yyaxis left
 plot(itr,posEps,'LineWidth',2);
 ylabel('Epsilon', 'FontWeight','Bold');
